@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <style>
+        body{
+            background-color: black;
+        }
+
+        .navbar{
+            text-align: center;
+            background-color: grey;
+            padding: 15px;
+        }
+        .navbar a{
+            color: rgb(10, 10, 10);
+            font-weight: 600;
+            margin: 10px;
+        }
+
+        #wrapper{
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        #wrapper h1{
+            font-size: 60px;
+            text-decoration: underline;
+        }
+
+        #wrapper p{
+            font-size: 20px;
+            margin: 29px;
+            padding: 10px;
+        }
+
+        .form label{
+            font-size: 29px;
+            margin: 10px;
+
+        }
+
+       
+        #guessfield{
+            padding: 5px;
+        }
+
+        #sbt{
+            display: flex;
+            flex-direction: column;
+            /* text-align: center; */
+            margin: auto ;
+            margin-top: 50px;
+            padding: 10px;
+            font-size: 20px;
+            background-color: black;
+            color: wheat;
+            border : 2px solid rgb(207, 198, 198)
+        }
+
+     
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="">HOME</a>
+        <a href="">ABOUT</a>
+    </nav>
+
+    <div id="wrapper">
+        <h1>Number Guessing Game</h1>
+        <p>Try and guess a random number between 1 and 100</p>
+        <p>You have 10 attempts to guess the right number</p>
+        <br>
+
+        <form class="form">
+            <label for="guessfield" id="guess">Guess a Number:</label>
+            <input type="text" id="guessfield">
+            <input type="submit" id="sbt" value="Submit Guest">
+        </form>
+
+        <div class="innerparas">
+            <p>Previous Guesses: <span class="guesses"></span></p>
+            <p>Guesses Remaining: <span class="last">10</span></p>
+            <p class="loworhigh"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
